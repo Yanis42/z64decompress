@@ -28,6 +28,7 @@ typedef enum {
 	CODEC_UCL,
 	CODEC_APLIB,
 	CODEC_ZLIB,
+	CODEC_LZ4,
 	CODEC_MAX
 } Codec;
 
@@ -43,6 +44,7 @@ static CodecInfo decCodecInfo[CODEC_MAX] = {
 	[CODEC_UCL]   = { "ucl"  , "UCL0", ucldec },
 	[CODEC_APLIB] = { "aplib", "APL0", apldec },
 	[CODEC_ZLIB ] = { "zlib" , "ZLIB", zlibdec },
+	[CODEC_LZ4]   = { "lz4"  , "LZ40", lz4dec },
 };
 
 // non-zero if iQue edition
